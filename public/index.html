@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        let socket = io();
+    </script>
+    <script src="js/client.js"></script>
+    <title>App</title>
+</head>
+<body>
+    <div id="chat">
+        <div id="messages"></div>
+        <div class="chat-input">
+            <input spellcheck="false" placeholder="Say something nice here..."><div class="toggle-chat"><i class="fas fa-eye-slash"></i></div>
+        </div>
+    </div>
+</body>
+</html>
